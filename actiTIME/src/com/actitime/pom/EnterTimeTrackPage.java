@@ -8,14 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 public class EnterTimeTrackPage {
 @FindBy(id="logoutLink")
 private WebElement logout;
-@FindBy(xpath="//a[@class='content tasks']")
+@FindBy(xpath="//div[text()='Tasks']")
 private WebElement TasksTab;
 
 public EnterTimeTrackPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 }
-public WebElement getLogout() {
-	return logout;
+
+public void clickLogout() {
+	logout.click();
+	
 }
 public WebElement getTasksTab() {
 	return TasksTab;

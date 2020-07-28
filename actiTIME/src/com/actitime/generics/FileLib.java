@@ -1,7 +1,6 @@
 package com.actitime.generics;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -40,7 +39,7 @@ public class FileLib {
 	 * @throws IOExcpetion
 	 */
 	public String getExcelData(String sheetname,int row,int cell) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./data/testscriptdata.xlsx");
+		FileInputStream fis=new FileInputStream("./data/testdata (2).xlsx");
 		Workbook wb=WorkbookFactory.create(fis);
 		String value = wb.getSheet(sheetname).getRow(row).getCell(cell).toString();
 		return value;

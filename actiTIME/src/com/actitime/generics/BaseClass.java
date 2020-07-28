@@ -47,7 +47,7 @@ public class BaseClass {
 	@AfterMethod
 	public void logout() {
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
-		e.getLogout().click();
+		e.clickLogout();
 		
 	}
 	

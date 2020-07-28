@@ -15,8 +15,8 @@ public class CreateCustomer extends BaseClass {
 	@Test
 	public void testCreateCustomer() throws InterruptedException, EncryptedDocumentException, IOException {
 		
-		 String customername = f.getExcelData("Sheet2", 1, 0);
-		 String description = f.getExcelData("Sheet2", 1, 1);
+		 String customername = f.getExcelData("Sheet1", 1, 0);
+		 String description = f.getExcelData("Sheet1", 1, 1);
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		//click on taskstab
 		e.getTasksTab().click();
